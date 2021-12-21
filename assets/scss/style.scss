@@ -174,7 +174,6 @@ textarea {
 }
 .section {
     background-color: $color-1;
-    padding-top: 90px;
     &:nth-child(1) {
         .header {
             &--title {
@@ -353,6 +352,7 @@ textarea {
 @media screen and (max-width: 767px) {
     .section {
         &:nth-child(1) {
+            padding-top: 40px;
             .header {
                 &--title {
                     font-size: 40px;
