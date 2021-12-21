@@ -370,10 +370,9 @@ textarea {
             }
         }
         &:nth-child(2) {
-            padding-left: 20px;
             .experience--timeline {
                 &::before {
-                    left: -15px;
+                    left: 0;
                 }
                 &__item {
                     .header {
@@ -387,8 +386,8 @@ textarea {
                     .dot {
                         height: 20px;
                         width: 20px;
-                        top: calc(0% + 25px);
-                        left: calc(0% - 25px);
+                        top: calc(50% + 10px);
+                        left: calc(0% - 10px);
 
                         &::after {
                             content: "";
