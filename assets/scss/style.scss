@@ -1,6 +1,6 @@
 $color-1: #1a1a1d;
 $color-2: #66fcf1;
-$color-3: #f69ec4;
+$color-3: #ff0057;
 // $color-4: #e8a87c;
 //xem maau 25 19 https://lutaweb.com/50-bang-mau-website-dep/
 
@@ -283,11 +283,9 @@ textarea {
                     }
                 }
                 .content {
-                    border-radius: 10px;
                     padding: 10px 30px;
                     transition: 0.5s ease;
                     background: rgba(255, 255, 255, 0.03);
-                    border-radius: 16px;
 
                     &--position {
                         color: $color-2;
@@ -334,6 +332,62 @@ textarea {
         }
     }
     &:nth-child(3) {
+        .skill-card {
+            position: relative;
+            height: 250px;
+            z-index: 4;
+            background: rgba(255, 255, 255, 0.03);
+            &--img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                height: 100%;
+                width: 100%;
+                background-color: $color-1;
+                overflow: hidden;
+                transition: 0.5s ease-in-out;
+                &::before {
+                    content: attr(data-text);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 5em;
+                    color: rgba(255, 255, 255, 0.05);
+                    font-weight: 700;
+                }
+            }
+            &--content {
+                margin-left: 75px;
+                padding: 20px;
+                color: #fff;
+                h3 {
+                    margin-bottom: 5px;
+                    font-size: 24px;
+                }
+                a {
+                    display: inline-block;
+                    margin-top: 10px;
+                    padding: 5px 10px;
+                    background: #fff;
+                    color: #333;
+                    text-decoration: none;
+                }
+            }
+            &:hover {
+                box-shadow: 0 0 1em hsl(0, 0%, 100% / 0.5);
+
+                .skill-card--img {
+                    height: 150px;
+                    width: 150px;
+                    left: -75px;
+                    top: calc(50% - 75px);
+                    background-color: $color-3;
+                }
+            }
+        }
     }
     &:nth-child(4) {
     }
@@ -401,12 +455,9 @@ textarea {
                         }
                     }
                     .content {
-                        border-radius: 10px;
                         padding: 10px 30px;
                         transition: 0.5s ease;
-
                         background: rgba(255, 255, 255, 0.03);
-                        border-radius: 16px;
                         &--position {
                             color: $color-2;
                             font-weight: bold;

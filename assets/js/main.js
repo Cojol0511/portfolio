@@ -6,3 +6,7 @@ new fullpage("#fullpage", {
 
 //methods
 fullpage_api.setAllowScrolling(true);
+
+(function ($) {
+	$(document).ready(function () {});
+})(jQuery);
