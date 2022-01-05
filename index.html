@@ -18,16 +18,11 @@
 		<title>Portfolio</title>
 	</head>
 	<body>
-		<div id="header">
+		<header id="header" class="header">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
-						<div class="d-flex flex-column align-items-center logo">
-							<div class="logo--icon">< Cojol ></div>
-							<div class="d-none d-md-block logo--slogan">
-								hoangphuloc
-							</div>
-						</div>
+						<div class="text-center header--logo">Cojol</div>
 					</div>
 					<div class="d-none d-md-block col-md-9">
 						<ul
@@ -36,57 +31,52 @@
 								d-flex
 								justify-content-end
 								align-items-center
-								menu
+								header--menu
 							"
 						>
-							<li class="mx-2 menu--item">
+							<li class="mx-2 header--menu__item">
 								<a href="#">information</a>
 							</li>
-							<li class="mx-2 menu--item">
+							<li class="mx-2 header--menu__item">
 								<a href="#">experience</a>
 							</li>
-							<li class="mx-2 menu--item">
+							<li class="mx-2 header--menu__item">
 								<a href="#">skill</a>
 							</li>
-							<li class="mx-2 menu--item">
+							<li class="mx-2 header--menu__item">
 								<a href="#">contact</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="fullpage">
-			<div class="section information">
+			<span></span>
+		</header>
+		<div class="main">
+			<section class="d-flex align-items-center information">
 				<div class="container">
 					<div class="row">
-						<div
-							class="
-								d-flex
-								flex-column
-								justify-content-center
-								col-md-6
-							"
-						>
-							<div class="header">
-								<div class="mb-3 mb-md-0 header--title">
+						<div class="col-md-6">
+							<div class="information--header">
+								<div class="information--header__title">
 									phung hoang phu loc
 								</div>
-								<div class="header--description">
-									Hey there, I'm a fluent web language
-									programmer. Nice to meet you!
+								<div class="information--header__description">
+									Hey there, I'm a fluent
+									<span>web programmer</span>. Nice to meet
+									you!
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="avata">
+							<div class="information--avata">
 								<img src="./assets/image/avata.png" alt="" />
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="section experience">
+			</section>
+			<section class="experience">
 				<div class="container">
 					<div class="experience--timeline">
 						<div class="mb-3 experience--timeline__item">
@@ -99,13 +89,13 @@
 											flex-column
 											justify-content-center
 											align-items-center
-											header
+											title
 										"
 									>
-										<div class="header--name">
+										<div class="title--name">
 											BITI Hight-tech Co., Ltd.
 										</div>
-										<div class="header--duration">
+										<div class="title--duration">
 											Mar 2021 - Present
 										</div>
 									</div>
@@ -140,13 +130,13 @@
 											flex-column
 											justify-content-center
 											align-items-center
-											header
+											title
 										"
 									>
-										<div class="header--name">
+										<div class="title--name">
 											FPT Software
 										</div>
-										<div class="header--duration">
+										<div class="title--duration">
 											Jan 2021 - Mar 2021
 										</div>
 									</div>
@@ -186,13 +176,13 @@
 											flex-column
 											justify-content-center
 											align-items-center
-											header
+											title
 										"
 									>
-										<div class="header--name">
+										<div class="title--name">
 											Duy Tan University
 										</div>
-										<div class="header--duration">
+										<div class="title--duration">
 											Aug 2020 - Apr 2021
 										</div>
 									</div>
@@ -214,10 +204,6 @@
 												social network application
 											</li>
 											<li>
-												Develop management website for
-												admin
-											</li>
-											<li>
 												Chat bot application to suggest
 												to customers
 											</li>
@@ -236,13 +222,13 @@
 											flex-column
 											justify-content-center
 											align-items-center
-											header
+											title
 										"
 									>
-										<div class="header--name">
+										<div class="title--name">
 											Acexis JSC
 										</div>
-										<div class="header--duration">
+										<div class="title--duration">
 											Nov 2019 - Dec 2019
 										</div>
 									</div>
@@ -270,116 +256,84 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="section">
-				<div class="container skill">
-					<div class="row g-5">
-						<div class="col-md-3">
-							<div class="skill-card">
-								<div
-									class="
-										d-flex
-										align-items-center
-										skill-card--img
-									"
-									data-text="WordPress"
-								>
-									<img
-										src="./assets/image/skill-1.png"
-										alt=""
-									/>
+			</section>
+			<section class="">
+				<div class="container">
+					<div class="row">
+						<div class="col-4">
+							<div class="skill">
+								<div class="my-3 skill-card">
+									<div
+										class="
+											d-flex
+											justify-content-center
+											align-items-center
+											skill-card--img
+										"
+										data-text="WordPress"
+									>
+										<img
+											src="./assets/image/skill-1.png"
+											alt=""
+										/>
+									</div>
+									<div
+										class="
+											h-100
+											d-flex
+											flex-column
+											justify-content-center
+											align-items-start
+											skill-card--content
+										"
+									>
+										<h3>WordPress</h3>
+										<p>
+											Lorem ipsum, dolor sit amet
+											consectetur adipisicing elit.
+										</p>
+										<a href="#">View Project</a>
+									</div>
 								</div>
-								<div
-									class="
-										h-100
-										d-flex
-										flex-column
-										justify-content-center
-										align-items-start
-										skill-card--content
-									"
-								>
-									<h3>WordPress</h3>
-									<p>
-										Lorem ipsum, dolor sit amet consectetur
-										adipisicing elit.
-									</p>
-									<a href="#">View Project</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="skill-card">
-								<div
-									class="
-										d-flex
-										align-items-center
-										skill-card--img
-									"
-									data-text="WordPress"
-								>
-									<img
-										src="./assets/image/skill-1.png"
-										alt=""
-									/>
-								</div>
-								<div
-									class="
-										h-100
-										d-flex
-										flex-column
-										justify-content-center
-										align-items-start
-										skill-card--content
-									"
-								>
-									<h3>WordPress</h3>
-									<p>
-										Lorem ipsum, dolor sit amet consectetur
-										adipisicing elit.
-									</p>
-									<a href="#">View Project</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="skill-card">
-								<div
-									class="
-										d-flex
-										align-items-center
-										skill-card--img
-									"
-									data-text="WordPress"
-								>
-									<img
-										src="./assets/image/skill-1.png"
-										alt=""
-									/>
-								</div>
-								<div
-									class="
-										h-100
-										d-flex
-										flex-column
-										justify-content-center
-										align-items-start
-										skill-card--content
-									"
-								>
-									<h3>WordPress</h3>
-									<p>
-										Lorem ipsum, dolor sit amet consectetur
-										adipisicing elit.
-									</p>
-									<a href="#">View Project</a>
+								<div class="my-3 skill-card">
+									<div
+										class="
+											d-flex
+											justify-content-center
+											align-items-center
+											skill-card--img
+										"
+										data-text="React"
+									>
+										<img
+											src="./assets/image/skill-2.png"
+											alt=""
+										/>
+									</div>
+									<div
+										class="
+											h-100
+											d-flex
+											flex-column
+											justify-content-center
+											align-items-start
+											skill-card--content
+										"
+									>
+										<h3>React</h3>
+										<p>
+											Lorem ipsum, dolor sit amet
+											consectetur adipisicing elit.
+										</p>
+										<a href="#">View Project</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="section">
+			</section>
+			<section class="">
 				<div class="component">
 					It is a long established fact that a reader will be
 					distracted by the readable content of a page when looking at
@@ -393,10 +347,10 @@
 					over the years, sometimes by accident, sometimes on purpose
 					(injected humour and the like).
 				</div>
-			</div>
+			</section>
 		</div>
 
-		<div id="contact" class="contact">
+		<footer id="footer" class="contact">
 			<ul
 				class="
 					d-flex
@@ -416,7 +370,7 @@
 					</a>
 				</li>
 			</ul>
-		</div>
+		</footer>
 		<script
 			src="https://code.jquery.com/jquery-3.6.0.min.js"
 			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
